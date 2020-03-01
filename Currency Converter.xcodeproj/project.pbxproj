@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44330863240B0FD400429EC5 /* ChangeCurrencyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44330862240B0FD400429EC5 /* ChangeCurrencyVC.swift */; };
+		4436E391240BB3FB00A5894A /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436E390240BB3FB00A5894A /* CustomTableViewCell.swift */; };
 		449A4F5523FF4B5B0027FBA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A4F5423FF4B5B0027FBA4 /* AppDelegate.swift */; };
 		449A4F5723FF4B5B0027FBA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A4F5623FF4B5B0027FBA4 /* SceneDelegate.swift */; };
 		449A4F5923FF4B5B0027FBA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A4F5823FF4B5B0027FBA4 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		44330862240B0FD400429EC5 /* ChangeCurrencyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCurrencyVC.swift; sourceTree = "<group>"; };
+		4436E390240BB3FB00A5894A /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		449A4F5123FF4B5B0027FBA4 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		449A4F5423FF4B5B0027FBA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449A4F5623FF4B5B0027FBA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				449A4F5423FF4B5B0027FBA4 /* AppDelegate.swift */,
 				449A4F5623FF4B5B0027FBA4 /* SceneDelegate.swift */,
 				44330862240B0FD400429EC5 /* ChangeCurrencyVC.swift */,
+				4436E390240BB3FB00A5894A /* CustomTableViewCell.swift */,
 				449A4F5823FF4B5B0027FBA4 /* ViewController.swift */,
 				449A4F5A23FF4B5B0027FBA4 /* Main.storyboard */,
 				449A4F5D23FF4B5E0027FBA4 /* Assets.xcassets */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				449A4F5923FF4B5B0027FBA4 /* ViewController.swift in Sources */,
+				4436E391240BB3FB00A5894A /* CustomTableViewCell.swift in Sources */,
 				449A4F5523FF4B5B0027FBA4 /* AppDelegate.swift in Sources */,
 				449A4F5723FF4B5B0027FBA4 /* SceneDelegate.swift in Sources */,
 				44330863240B0FD400429EC5 /* ChangeCurrencyVC.swift in Sources */,
