@@ -10,17 +10,19 @@ import UIKit
 
 class ChangeCurrencyVC: UITableViewController {
 
-    
+    var selectValue:Double = 0
+    var selectCurrency:String? = ""
+    var selectEmoji:String = ""
+    var choose:Bool?
     var myCurrency:[String] = []
     var myValue:[Double] = []
-    var count = 0
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         self.tableView.reloadData()
     }
     
-
+    //MARK: Connect api
     override func viewDidLoad() {
         super.viewDidLoad()
         let url = URL(string: "https://api.exchangeratesapi.io/latest")
@@ -61,15 +63,18 @@ class ChangeCurrencyVC: UITableViewController {
              
             task.resume()
     }
-
-
     
+
+
+    //MARK: Set number of row
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return myCurrency.count
     }
-
     
+    
+
+    //MARK: Add data to tableView
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Title", for: indexPath) as! CustomTableViewCell
 
@@ -180,10 +185,35 @@ class ChangeCurrencyVC: UITableViewController {
                  }
         return cell
     }
-
+    
+    //MARK: Set height for row
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
+    //MARK: Send date to VC
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "backToConverter" else {return}
+        if let indexPath = tableView.indexPathForSelectedRow{
+            let dvc = segue.destination as? ViewController
+            if(self.choose == true){
+                self.selectCurrency = self.myCurrency[indexPath.row]
+                guard selectCurrency != nil else {return}
+                dvc?.first = selectCurrency!
+                dvc?.firstValue = self.myValue[indexPath.row]
+            }
+            else{
+                self.selectCurrency = self.myCurrency[indexPath.row]
+                guard selectCurrency != nil else {return}
+                dvc?.second = selectCurrency!
+                dvc?.second = self.myValue[indexPath.row]
+            }
+//
+        }
+    }
+    
 
       
 

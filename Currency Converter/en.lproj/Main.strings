@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = " 🇪🇺"; ObjectID = "FKv-MS-PnV"; */
+"FKv-MS-PnV.text" = " 🇪🇺";
+
+/* Class = "UIButton"; normalTitle = "Convert"; ObjectID = "LFz-57-Ips"; */
+"LFz-57-Ips.normalTitle" = "Convert";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Suz-CI-YcB"; */
+"Suz-CI-YcB.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "🇬🇧 GBP"; ObjectID = "UF3-XC-Ybu"; */
+"UF3-XC-Ybu.normalTitle" = "🇬🇧 GBP";
+
+/* Class = "UIButton"; normalTitle = "🇪🇺 EUR"; ObjectID = "gWh-fO-yaU"; */
+"gWh-fO-yaU.normalTitle" = "🇪🇺 EUR";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rYz-Wi-2vS"; */
+"rYz-Wi-2vS.text" = "Label";
+
+/* Class = "UILabel"; text = "Currency converter"; ObjectID = "smT-gV-QZE"; */
+"smT-gV-QZE.text" = "Currency converter";
