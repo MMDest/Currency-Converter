@@ -24,7 +24,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9XU-r2-QV0">
                                 <rect key="frame" x="100" y="173" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pte-jx-Z5e">
                                 <rect key="frame" x="100" y="262.66666666666669" width="214" height="34"/>
@@ -38,7 +38,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QXf-ml-Yai" kind="show" identifier="firstButtonSegue" id="x0T-mZ-bDf"/>
+                                    <segue destination="QXf-ml-Yai" kind="presentation" identifier="firstButtonSegue" id="x0T-mZ-bDf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UF3-XC-Ybu">
@@ -48,7 +48,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="QXf-ml-Yai" kind="show" identifier="secondButtonSegue" id="VZ0-5D-Adf"/>
+                                    <segue destination="QXf-ml-Yai" kind="presentation" identifier="secondButtonSegue" id="VZ0-5D-Adf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFz-57-Ips">
@@ -62,7 +62,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="ConvertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RJl-wD-0sl"/>
+                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7BX-VY-qKG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-nJ-iGS">
@@ -74,7 +74,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="arrow.up.arrow.down" catalog="system"/>
                                 <connections>
-                                    <action selector="ChangeToOpposite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SMa-UO-eVd"/>
+                                    <action selector="reChangeCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7h-sG-n5R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,7 +109,7 @@
                         <outlet property="firstButton" destination="gWh-fO-yaU" id="0yQ-pC-kCx"/>
                         <outlet property="firstLabel" destination="9XU-r2-QV0" id="kAX-7u-Ujv"/>
                         <outlet property="secondButton" destination="UF3-XC-Ybu" id="em4-Ye-nLJ"/>
-                        <outlet property="secondLabel" destination="pte-jx-Z5e" id="74A-Ia-E0q"/>
+                        <outlet property="secondLabel" destination="pte-jx-Z5e" id="e5F-5N-xH8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -201,6 +201,6 @@
         <image name="arrow.up.arrow.down" catalog="system" width="64" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VZ0-5D-Adf"/>
+        <segue reference="x0T-mZ-bDf"/>
     </inferredMetricsTieBreakers>
 </document>
