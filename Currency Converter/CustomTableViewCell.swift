@@ -9,11 +9,9 @@
 import UIKit
 
 class CustomTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyCountryLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
