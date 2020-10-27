@@ -47,23 +47,6 @@
                                 <state key="normal" title="🇬🇧 GBP">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="QXf-ml-Yai" kind="presentation" identifier="secondButtonSegue" id="VZ0-5D-Adf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFz-57-Ips">
-                                <rect key="frame" x="100" y="304.66666666666669" width="214" height="34"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="1Jl-PT-Xci"/>
-                                </constraints>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Convert">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="convertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7BX-VY-qKG"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-nJ-iGS">
                                 <rect key="frame" x="187" y="216.33333333333334" width="40" height="37.666666666666657"/>
@@ -77,28 +60,35 @@
                                     <action selector="reChangeCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h7h-sG-n5R"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UAy-0e-DqC">
+                                <rect key="frame" x="0.0" y="255" width="414" height="641"/>
+                                <connections>
+                                    <segue destination="QXf-ml-Yai" kind="embed" id="lOw-AG-Mzt"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="0.59275783834422113" green="1" blue="0.97232933732074678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hmc-nJ-iGS" firstAttribute="top" secondItem="9XU-r2-QV0" secondAttribute="bottom" constant="8" id="0iD-uT-h32"/>
                             <constraint firstItem="YxH-ey-ba1" firstAttribute="trailing" secondItem="9XU-r2-QV0" secondAttribute="trailing" constant="100" id="AW0-7F-zeE"/>
-                            <constraint firstItem="9XU-r2-QV0" firstAttribute="trailing" secondItem="LFz-57-Ips" secondAttribute="trailing" id="Bro-JS-NQZ"/>
                             <constraint firstItem="UF3-XC-Ybu" firstAttribute="leading" secondItem="gWh-fO-yaU" secondAttribute="leading" id="Eyh-02-abW"/>
                             <constraint firstItem="smT-gV-QZE" firstAttribute="centerX" secondItem="YxH-ey-ba1" secondAttribute="centerX" id="EzZ-D4-5KQ"/>
                             <constraint firstItem="gWh-fO-yaU" firstAttribute="leading" relation="lessThanOrEqual" secondItem="YxH-ey-ba1" secondAttribute="leading" constant="43" id="JW0-Vg-kp3"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="leading" secondItem="gWh-fO-yaU" secondAttribute="trailing" constant="19" id="RXF-8z-Gzi"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="bottom" secondItem="gWh-fO-yaU" secondAttribute="bottom" id="U3n-i9-A9G"/>
+                            <constraint firstItem="YxH-ey-ba1" firstAttribute="trailing" secondItem="UAy-0e-DqC" secondAttribute="trailing" id="Uff-P4-b6W"/>
                             <constraint firstItem="UF3-XC-Ybu" firstAttribute="firstBaseline" secondItem="pte-jx-Z5e" secondAttribute="baseline" id="Xbk-hq-GcV"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="trailing" secondItem="pte-jx-Z5e" secondAttribute="trailing" id="XvC-Zs-w4P"/>
                             <constraint firstItem="hmc-nJ-iGS" firstAttribute="centerX" secondItem="9XU-r2-QV0" secondAttribute="centerX" id="aFn-PS-hQD"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="top" secondItem="gWh-fO-yaU" secondAttribute="top" id="cts-tj-Ks4"/>
                             <constraint firstItem="UF3-XC-Ybu" firstAttribute="top" secondItem="gWh-fO-yaU" secondAttribute="bottom" constant="57" id="dnr-Rj-ci0"/>
+                            <constraint firstItem="UAy-0e-DqC" firstAttribute="bottom" secondItem="YxH-ey-ba1" secondAttribute="bottom" constant="34" id="eyl-De-lR9"/>
                             <constraint firstItem="smT-gV-QZE" firstAttribute="top" secondItem="YxH-ey-ba1" secondAttribute="top" constant="53" id="fgY-38-3OC"/>
-                            <constraint firstItem="LFz-57-Ips" firstAttribute="top" secondItem="pte-jx-Z5e" secondAttribute="bottom" constant="8" id="gmJ-dL-qvq"/>
+                            <constraint firstItem="UAy-0e-DqC" firstAttribute="leading" secondItem="YxH-ey-ba1" secondAttribute="leading" id="gPR-hC-UFM"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="leading" secondItem="pte-jx-Z5e" secondAttribute="leading" id="hDB-9R-wFC"/>
-                            <constraint firstItem="9XU-r2-QV0" firstAttribute="leading" secondItem="LFz-57-Ips" secondAttribute="leading" id="kXD-dF-qux"/>
                             <constraint firstItem="gWh-fO-yaU" firstAttribute="top" secondItem="smT-gV-QZE" secondAttribute="bottom" constant="20" id="pPf-yt-X31"/>
                             <constraint firstItem="pte-jx-Z5e" firstAttribute="top" secondItem="hmc-nJ-iGS" secondAttribute="bottom" constant="7.5" id="rhF-er-U0Q"/>
+                            <constraint firstItem="UAy-0e-DqC" firstAttribute="top" secondItem="hmc-nJ-iGS" secondAttribute="bottom" id="rwc-dO-vfG"/>
                             <constraint firstItem="UF3-XC-Ybu" firstAttribute="trailing" secondItem="gWh-fO-yaU" secondAttribute="trailing" id="uRN-st-gPp"/>
                             <constraint firstItem="9XU-r2-QV0" firstAttribute="centerX" secondItem="YxH-ey-ba1" secondAttribute="centerX" id="usO-8Y-UI1"/>
                         </constraints>
@@ -123,7 +113,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="PFl-Bg-YDo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.58212989569999996" green="0.98366373780000005" blue="0.97564834359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Title" rowHeight="50" id="egT-ED-bbP" customClass="CustomTableViewCell" customModule="Currency_Converter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="50"/>
@@ -177,11 +167,11 @@
                                         <constraint firstAttribute="bottom" secondItem="Suz-CI-YcB" secondAttribute="bottom" id="l4O-vg-lCN"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.58212989569999996" green="0.98366373780000005" blue="0.97564834359999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="currencyCountryLabel" destination="Suz-CI-YcB" id="9lh-J8-Qko"/>
                                     <outlet property="currencyLabel" destination="rYz-Wi-2vS" id="cgs-TY-eQC"/>
                                     <outlet property="emojiLabel" destination="FKv-MS-PnV" id="Nqn-zX-gOy"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="backToConverter" id="b12-ax-etT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

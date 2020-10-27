@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondButton: UIButton!
     @IBOutlet weak var firstLabel: UITextField!
     @IBOutlet weak var secondLabel: UITextField!
+    @IBOutlet weak var currencyTV: UITableView!
     var first = "🇺🇦 UAH"
     var second = "🇺🇸 USD"
     var firstValue = 0.0
@@ -66,15 +67,15 @@ class ViewController: UIViewController {
         }
     }
     // MARK: Convert button
-    @IBAction func convertButton(_ sender: UIButton) {
-        if let value = Double(firstLabel.text!.replacingOccurrences(of: ",", with: ".")) {
-            self.secondValue = value * self.firstValue
-               } else {
-                   print("Error")
-                   return
-               }
-        secondLabel.text = String(format: "%.2f", secondValue)
-    }
+//    @IBAction func convertButton(_ sender: UIButton) {
+//        if let value = Double(firstLabel.text!.replacingOccurrences(of: ",", with: ".")) {
+//            self.secondValue = value * self.firstValue
+//               } else {
+//                   print("Error")
+//                   return
+//               }
+//        secondLabel.text = String(format: "%.2f", secondValue)
+//    }
     @IBAction func reChangeCurrency(_ sender: UIButton) {
         let buf = first
         first = second

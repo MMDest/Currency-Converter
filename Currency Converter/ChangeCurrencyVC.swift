@@ -12,23 +12,23 @@ class ChangeCurrencyVC: UITableViewController {
     var selectCurrency = ""
     var choose: Bool?
     var buf = ""
-    var myCurrency = ["USD", "UAH", "AED", "ARS", "AUD", "BGN", "BRL", "BSD", "CAD", "CHF", "CLP",
+    var myCurrency = ["AED", "ARS", "AUD", "BGN", "BRL", "BSD", "CAD", "CHF", "CLP",
                         "CNY", "COP", "CZK", "DKK", "DOP", "EGP", "EUR", "FJD", "GBP", "GTQ", "INR", "ISK",
                         "JPY", "KRW", "KZT", "MXN", "MYR", "NOK", "NZD", "PAB", "PEN", "PHP", "PKR", "PLN",
-                        "PYG", "RON", "RUB", "SAR", "SEK", "SGD", "THB", "TRY", "TWD", "UYU", "ZAR", "HKD",
+                        "PYG", "RON", "RUB", "SAR", "SEK", "SGD", "THB", "TRY", "TWD", "UAH", "USD", "UYU", "ZAR", "HKD",
                         "HRK", "HUF", "IDR", "ILS"]
     var myValue: [Double] = []
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         self.tableView.reloadData()
     }
-    // MARK: Connect api
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     // MARK: Set number of row
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myCurrency.count
+        return myCurrency.count - 1
     }
     // MARK: Add data to tableView
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -46,7 +46,7 @@ class ChangeCurrencyVC: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    // MARK: Send date to VC
+    // MARK: Send data to VC
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "backToConverter" else {return}
         if let indexPath = tableView.indexPathForSelectedRow {
